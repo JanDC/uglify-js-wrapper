@@ -1,0 +1,30 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "46c2e710033a3841425dcc8160c92541",
+    "packages": [
+        {
+            "name": "mishoo/UglifyJS2",
+            "version": "2.4.24",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mishoo/UglifyJS2",
+                "reference": "tags/v2.4.24"
+            },
+            "type": "library"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4.0"
+    },
+    "platform-dev": []
+}
