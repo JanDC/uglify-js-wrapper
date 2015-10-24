@@ -7,13 +7,11 @@ PHP wrapper for mishoo's UglifyJs
 Following scripts have to be executed
 
 ```json
- "scripts": {
-    "post-autoload-dump": [
-      "cd vendor/mishoo/UglifyJS2 && npm install",
-      "ln -sf `pwd`/vendor/mishoo/UglifyJS2/bin/uglifyjs `pwd`/bin/uglifyjs",
-      "chmod +x `pwd`/bin/uglifyjs"
-    ]
-  },
+  "post-autoload-dump": [
+       "cd vendor/mishoo/UglifyJS2 && npm install",
+       "ln -sf `pwd`/vendor/mishoo/UglifyJS2/bin/uglifyjs `pwd`/vendor/jandc/uglify-js-wrapper/bin/uglifyjs",
+       "chmod +x `pwd`/vendor/jandc/uglify-js-wrapper/bin/uglifyjs"
+     ]
 ```
 
 

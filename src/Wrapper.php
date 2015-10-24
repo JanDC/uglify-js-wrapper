@@ -6,7 +6,7 @@ class Wrapper
 {
     public static function execute($file, array $options)
     {
-        $command = 'bin/uglifyjs ' . implode(' ', $options) . ' -- ' . $file;
+        $command = __DIR__.'/../bin/uglifyjs ' . implode(' ', $options) . ' -- ' . $file;
         exec($command, $output, $returnvar);
         return current($output);
     }
