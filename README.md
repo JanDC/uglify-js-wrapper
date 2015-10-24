@@ -1,4 +1,5 @@
 # UglifyJsWrapper
-PHP wrapper for mishoo's UglifyJs, with minimal dependencies
+PHP wrapper for mishoo's UglifyJs
 
-Note: this is an experimental branch and should not be considered in production code (or development for that matter)
+- Depends on node/npm to resolve dependencies and execute Uglify
+- Versions follow the versions of the UglifyJS package
