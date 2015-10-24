@@ -14,6 +14,18 @@
           "reference": "tags/v2.4.24"
         }
       }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "gijsroge/priority-navigation",
+        "version": "1.0.9",
+        "source": {
+          "type": "git",
+          "url": "https://github.com/gijsroge/priority-navigation",
+          "reference": "1.0.9"
+        }
+      }
     }
   ],
   "autoload": {
@@ -23,12 +35,16 @@
   },
   "scripts": {
     "post-autoload-dump": [
-      "ln -sf ../vendor/mishoo/UglifyJS2/bin/uglifyjs ./bin"
+      "cd vendor/mishoo/UglifyJS2 && npm install",
+      "ln -sf `pwd`/vendor/mishoo/UglifyJS2/bin/uglifyjs `pwd`/bin/uglifyjs",
+      "ln -sf `pwd`/vendor/gijsroge/priority-navigation/src/priority-nav.js `pwd`/src/tests/js/sample.js"
     ]
   },
   "require": {
     "php": ">=5.4.0",
-    "mishoo/UglifyJS2": "2.4.24"
+    "mishoo/UglifyJS2": "2.4.24",
+    "gijsroge/priority-navigation": "1.0.9",
+    "phpunit/phpunit": "^5.0"
   },
   "authors": [
     {

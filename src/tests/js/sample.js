@@ -1,0 +1,1 @@
+/home/jan/projects/UglifyJsWrapper/vendor/gijsroge/priority-navigation/src/priority-nav.js
