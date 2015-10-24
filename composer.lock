@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "40e6dc6a204774b286c558453da18398",
+    "hash": "bdccd576cebd31b9e3a3bad85bca378b",
     "packages": [
         {
             "name": "doctrine/instantiator",
@@ -59,16 +59,6 @@
                 "instantiate"
             ],
             "time": "2015-06-14 21:17:01"
-        },
-        {
-            "name": "gijsroge/priority-navigation",
-            "version": "1.0.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/gijsroge/priority-navigation",
-                "reference": "1.0.9"
-            },
-            "type": "library"
         },
         {
             "name": "mishoo/UglifyJS2",
