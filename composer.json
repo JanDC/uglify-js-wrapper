@@ -1,5 +1,5 @@
 {
-  "name": "git://github.com/JanDC/uglify-js-wrapper",
+  "name": "jandc/uglify-js-wrapper",
   "description": "PHP wrapper for mishoo's UglifyJS",
   "license": "ISC",
   "repositories": [
