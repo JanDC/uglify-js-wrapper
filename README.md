@@ -4,6 +4,18 @@ PHP wrapper for mishoo's UglifyJs
 - Depends on node/npm to resolve dependencies and execute Uglify
 - Versions follow the versions of the UglifyJS package
 
+Following scripts have to be executed
+
+```json
+ "scripts": {
+    "post-autoload-dump": [
+      "cd vendor/mishoo/UglifyJS2 && npm install",
+      "ln -sf `pwd`/vendor/mishoo/UglifyJS2/bin/uglifyjs `pwd`/bin/uglifyjs",
+      "chmod +x `pwd`/bin/uglifyjs"
+    ]
+  },
+```
+
 
 If you encounter difficulties resolving the javascript dependencies, add following custom repositories:
 
@@ -20,18 +32,6 @@ If you encounter difficulties resolving the javascript dependencies, add followi
           "reference": "tags/v2.4.24"
         }
       }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "gijsroge/priority-navigation",
-        "version": "1.0.9",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/gijsroge/priority-navigation",
-          "reference": "1.0.9"
-        }
-      }
-    }
-  ],
+    }    
+  ]
 ```
