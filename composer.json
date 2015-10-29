@@ -31,7 +31,7 @@
   "require": {
     "php": ">=5.4.0",
     "mishoo/UglifyJS2": "2.4.24",
-    "phpunit/phpunit": "^5.0"
+    "phpunit/phpunit": "^4.8"
   },
   "authors": [
     {
