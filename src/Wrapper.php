@@ -42,4 +42,18 @@ class Wrapper
         exec($command, $output, $returnvar);
         return current($output);
     }
+    
+     /**
+     * @param array $files
+     * @param array $options
+     *
+     * @return null|string
+     */
+    public static function executeFileArray(array $files, array $options)
+    {
+        $command = __DIR__ . '/../bin/uglifyjs ' . implode(' ', $files) . ' ' . implode(' ', $options);
+        exec($command, $output, $returnvar);
+        return current($output);
+    }
+    
 }
