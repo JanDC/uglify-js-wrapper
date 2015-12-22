@@ -26,8 +26,7 @@ class Wrapper
     public static function executeFile($file, array $options)
     {
         $command = __DIR__ . '/../bin/uglifyjs ' . implode(' ', $options) . ' -- ' . $file;
-        exec($command, $output, $returnvar);
-        return current($output);
+        return shell_exec($command);
     }
 
     /**
@@ -39,11 +38,10 @@ class Wrapper
     public static function executeString($jsString, array $options)
     {
         $command = __DIR__ . '/../bin/uglifyjs ' . implode(' ', $options) . ' - ' . $jsString;
-        exec($command, $output, $returnvar);
-        return current($output);
+        return shell_exec($command);
     }
-    
-     /**
+
+    /**
      * @param array $files
      * @param array $options
      *
@@ -52,8 +50,7 @@ class Wrapper
     public static function executeFileArray(array $files, array $options)
     {
         $command = __DIR__ . '/../bin/uglifyjs ' . implode(' ', $files) . ' ' . implode(' ', $options);
-        exec($command, $output, $returnvar);
-        return current($output);
+        return shell_exec($command);
     }
-    
+
 }
