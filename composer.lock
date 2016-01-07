@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7810aa0f5cd3b1513f5daee1cb8aa152",
-    "content-hash": "7e70cf11d70ad3b902efc4cd8b9bcd05",
+    "hash": "89d81dc4560580f7595e448a2b17a6b4",
+    "content-hash": "484cf2a6c9882a1fc6ec9b56d5f54b4d",
     "packages": [
         {
             "name": "doctrine/instantiator",
@@ -60,16 +60,6 @@
                 "instantiate"
             ],
             "time": "2015-06-14 21:17:01"
-        },
-        {
-            "name": "mishoo/UglifyJS2",
-            "version": "2.6.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mishoo/UglifyJS2",
-                "reference": "tags/v2.6.1"
-            },
-            "type": "library"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -921,16 +911,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.0.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "177a015cb0e19ff4a49e0e2e2c5fc1c1bee07002"
+                "reference": "3df409958a646dad2bc5046c3fb671ee24a1a691"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/177a015cb0e19ff4a49e0e2e2c5fc1c1bee07002",
-                "reference": "177a015cb0e19ff4a49e0e2e2c5fc1c1bee07002",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/3df409958a646dad2bc5046c3fb671ee24a1a691",
+                "reference": "3df409958a646dad2bc5046c3fb671ee24a1a691",
                 "shasum": ""
             },
             "require": {
@@ -966,7 +956,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-11-30 12:36:17"
+            "time": "2015-12-26 13:39:53"
         }
     ],
     "packages-dev": [],

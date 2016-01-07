@@ -2,35 +2,13 @@
   "name": "jandc/uglify-js-wrapper",
   "description": "PHP wrapper for mishoo's UglifyJS",
   "license": "ISC",
-  "repositories": [
-    {
-      "type": "package",
-      "package": {
-        "name": "mishoo/UglifyJS2",
-        "version": "2.6.1",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/mishoo/UglifyJS2",
-          "reference": "tags/v2.6.1"
-        }
-      }
-    }
-  ],
   "autoload": {
     "psr-4": {
       "UglifyJsWrapper\\": "src/"
     }
   },
-  "scripts": {
-    "post-autoload-dump": [
-      "cd vendor/mishoo/UglifyJS2 && npm install",
-      "ln -sf `pwd`/vendor/mishoo/UglifyJS2/bin/uglifyjs `pwd`/bin/uglifyjs",
-      "chmod +x `pwd`/bin/uglifyjs"
-    ]
-  },
   "require": {
     "php": ">=5.4.0",
-    "mishoo/UglifyJS2": "2.6.1",
     "phpunit/phpunit": "^4.8"
   },
   "authors": [
